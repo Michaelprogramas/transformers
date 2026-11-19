@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chat Local · navegador + sua chave de API</title>
+    <meta name="description" content="Chat de IA que roda 100% no navegador, com as suas próprias chaves de API (OpenAI, Anthropic, OpenRouter, Gemini, Groq, Mistral, DeepSeek, Ollama)." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236ea8fe'/%3E%3Cpath d='M8 22V10h4l4 8 4-8h4v12h-3v-7l-3.5 7h-3L11 15v7z' fill='%230b0f14'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-3-6z" /></symbol>
+      <symbol id="i-stop" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2" /></symbol>
+      <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" /><path d="M19.4 15a7.9 7.9 0 000-6l1.6-2-2-2-2 1.6a7.9 7.9 0 00-6 0L9 5 7 7l1.6 2a7.9 7.9 0 000 6L7 17l2 2 2-1.6a7.9 7.9 0 006 0L19 19l2-2z" /></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2M7 7l1 13h8l1-13" /></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2" /><path d="M5 15V5h10" /></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 19h14" /></symbol>
+      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" /><circle cx="9" cy="10" r="1.6" /><path d="M21 16l-5-5-6 6" /></symbol>
+      <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="12" r="4" /><path d="M12 12h9m-3 0v3m3-3v2" /></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" /></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 13a8.5 8.5 0 11-10-10 7 7 0 0010 10z" /></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19" /></symbol>
+      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 12a8 8 0 10-3 6.2M20 4v6h-6" /></symbol>
+      <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20h4L20 8l-4-4L4 16z" /></symbol>
+      <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M9.5 9a2.5 2.5 0 114 2c-1 .8-1.5 1.3-1.5 2.5" /><circle cx="12" cy="17" r="0.8" /></symbol>
+    </svg>
+
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">◧</div>
+          <div>
+            <h1>Chat Local</h1>
+            <p>no navegador · sua chave</p>
+          </div>
+        </div>
+
+        <button class="btn-new" id="new-chat">
+          <svg class="icon"><use href="#i-plus" /></svg> Nova conversa
+        </button>
+
+        <div class="search">
+          <input id="search" type="search" placeholder="Buscar conversas…" autocomplete="off" />
+        </div>
+
+        <nav class="conversations" id="conversations" aria-label="Conversas"></nav>
+
+        <div class="sidebar-footer">
+          <div class="provider-pill" id="provider-pill" title="Provedor e modelo ativos">
+            <span class="dot" id="pill-dot"></span>
+            <span id="pill-text">Configurar provedor</span>
+          </div>
+          <div class="footer-actions">
+            <button class="btn-ghost" id="open-settings" title="Configurações (Ctrl+,)">
+              <svg class="icon"><use href="#i-settings" /></svg> Configurações
+            </button>
+            <button class="btn-icon" id="toggle-theme" title="Alternar tema">
+              <svg class="icon"><use href="#i-moon" /></svg>
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="chat-heading">
+            <h2 id="chat-title" title="Clique duas vezes para renomear">Nova conversa</h2>
+            <span class="chat-sub" id="chat-sub">nenhuma mensagem ainda</span>
+          </div>
+          <div class="topbar-actions">
+            <button class="btn-icon" id="export-md" title="Exportar como Markdown">
+              <svg class="icon"><use href="#i-download" /></svg>
+            </button>
+            <button class="btn-icon" id="export-json" title="Exportar como JSON">
+              <svg class="icon"><use href="#i-copy" /></svg>
+            </button>
+            <button class="btn-icon" id="clear-chat" title="Limpar mensagens desta conversa">
+              <svg class="icon"><use href="#i-trash" /></svg>
+            </button>
+            <button class="btn-icon" id="open-help" title="Ajuda e atalhos">
+              <svg class="icon"><use href="#i-help" /></svg>
+            </button>
+          </div>
+        </header>
+
+        <section class="messages" id="messages" aria-live="polite">
+          <div class="empty-state" id="empty-state">
+            <div class="empty-mark">◧</div>
+            <h3>Converse com qualquer modelo usando a sua própria chave</h3>
+            <p>
+              Nada sai do seu navegador além da chamada direta ao provedor escolhido. As chaves ficam salvas apenas no
+              <code>localStorage</code> deste navegador.
+            </p>
+            <div class="chips" id="suggestion-chips">
+              <button class="chip" data-prompt="Explique em 3 parágrafos como funciona um transformer, com uma analogia simples.">Explique transformers</button>
+              <button class="chip" data-prompt="Escreva um script Python que lê um CSV de vendas e plota um gráfico mensal com matplotlib.">Script Python + gráfico</button>
+              <button class="chip" data-prompt="Compare OpenAI, Anthropic, Gemini, Groq e OpenRouter para rodar um chatbot: preço, limites e quando escolher cada um.">Comparar provedores</button>
+              <button class="chip" data-prompt="Revise este texto e proponha uma versão mais clara: “a reunião foi remarcada para depois por conta de problemas de agenda.”">Revisar um texto</button>
+            </div>
+            <div class="empty-note">
+              <svg class="icon"><use href="#i-key" /></svg>
+              Comece em <button class="link-btn" id="empty-settings">Configurações</button> e cole a chave de API. Sem chave, use o
+              provedor <strong>Demonstração</strong>.
+            </div>
+          </div>
+        </section>
+
+        <footer class="composer-area">
+          <div class="attachments" id="attachments"></div>
+          <div class="composer" id="composer">
+            <button class="btn-icon attach" id="attach-btn" title="Anexar imagem">
+              <svg class="icon"><use href="#i-image" /></svg>
+            </button>
+            <textarea id="input" rows="1" placeholder="Pergunte alguma coisa…  (Enter envia, Shift+Enter quebra linha)"></textarea>
+            <button class="btn-send" id="send-btn" title="Enviar">
+              <svg class="icon"><use href="#i-send" /></svg>
+            </button>
+          </div>
+          <div class="composer-meta">
+            <span id="composer-status">pronto</span>
+            <span class="sep">·</span>
+            <span id="token-estimate">0 tokens no contexto</span>
+            <span class="grow"></span>
+            <span class="privacy"><svg class="icon"><use href="#i-key" /></svg> chaves só neste navegador</span>
+          </div>
+          <input type="file" id="file-input" accept="image/*" multiple hidden />
+        </footer>
+      </main>
+    </div>
+
+    <!-- ============================= CONFIGURAÇÕES ============================= -->
+    <dialog id="settings-dialog" class="dialog">
+      <form method="dialog" class="dialog-inner">
+        <header class="dialog-head">
+          <h2>Configurações</h2>
+          <button class="btn-icon" value="close" aria-label="Fechar"><svg class="icon"><use href="#i-close" /></svg></button>
+        </header>
+
+        <div class="dialog-body">
+          <section class="field-group">
+            <h3>Provedor</h3>
+            <div class="provider-grid" id="provider-grid"></div>
+            <p class="hint" id="provider-hint"></p>
+          </section>
+
+          <section class="field-group">
+            <h3>Chave de API</h3>
+            <div class="key-row">
+              <input id="api-key" type="password" placeholder="cole sua chave aqui" autocomplete="off" spellcheck="false" />
+              <button type="button" class="btn-ghost" id="toggle-key" title="Mostrar/ocultar">mostrar</button>
+            </div>
+            <div class="key-meta">
+              <span id="key-status" class="badge">sem chave</span>
+              <a id="key-link" class="link" href="#" target="_blank" rel="noopener noreferrer">onde obter a chave ↗</a>
+              <button type="button" class="link-btn" id="clear-key">remover chave</button>
+            </div>
+            <p class="hint">
+              A chave é gravada no <code>localStorage</code> deste navegador e enviada só para o provedor selecionado.
+              Em computador compartilhado, use “limpar tudo” ao terminar.
+            </p>
+          </section>
+
+          <section class="field-group">
+            <h3>Modelo</h3>
+            <div class="key-row">
+              <input id="model-input" list="model-list" placeholder="ex.: gpt-4.1-mini" spellcheck="false" />
+              <datalist id="model-list"></datalist>
+              <button type="button" class="btn-ghost" id="fetch-models" title="Consultar /models do provedor">buscar</button>
+            </div>
+            <p class="hint" id="model-hint"></p>
+          </section>
+
+          <section class="field-group">
+            <h3>Endpoint</h3>
+            <input id="base-url" spellcheck="false" placeholder="https://api.openai.com/v1" />
+            <p class="hint">Para OpenAI, use <code>/v1</code>. Para LiteLLM, vLLM ou Ollama remoto, aponte para o seu servidor compatível.</p>
+          </section>
+
+          <section class="field-group">
+            <h3>Parâmetros de geração</h3>
+            <label class="range-row">
+              <span>Temperatura</span>
+              <input id="temperature" type="range" min="0" max="2" step="0.1" value="0.7" />
+              <output id="temperature-out">0.7</output>
+            </label>
+            <div class="two-cols">
+              <label class="stacked">
+                <span>Máx. tokens de resposta</span>
+                <input id="max-tokens" type="number" min="16" max="32768" step="16" value="1024" />
+              </label>
+              <label class="stacked checkbox">
+                <input id="streaming" type="checkbox" checked />
+                <span>Resposta em streaming (token a token)</span>
+              </label>
+            </div>
+          </section>
+
+          <section class="field-group">
+            <h3>Prompt de sistema</h3>
+            <textarea id="system-prompt" rows="3" placeholder="Você é um assistente direto e útil. Responda em português do Brasil."></textarea>
+            <div class="row-actions">
+              <button type="button" class="link-btn" id="reset-system">restaurar padrão</button>
+            </div>
+          </section>
+
+          <section class="field-group">
+            <h3>Diagnóstico</h3>
+            <div class="key-row">
+              <button type="button" class="btn-primary" id="test-connection">Testar conexão</button>
+              <span class="badge" id="test-result">não testado</span>
+            </div>
+            <pre class="test-log" id="test-log" hidden></pre>
+          </section>
+
+          <section class="field-group danger">
+            <h3>Dados locais</h3>
+            <div class="row-actions">
+              <button type="button" class="btn-ghost" id="export-all">Exportar tudo (JSON)</button>
+              <button type="button" class="btn-ghost" id="import-all">Importar backup</button>
+              <button type="button" class="btn-danger" id="wipe-all">Apagar tudo</button>
+            </div>
+            <input type="file" id="import-file" accept="application/json" hidden />
+          </section>
+        </div>
+
+        <footer class="dialog-foot">
+          <button class="btn-primary" value="close">Concluído</button>
+        </footer>
+      </form>
+    </dialog>
+
+    <!-- ================================ AJUDA ================================ -->
+    <dialog id="help-dialog" class="dialog">
+      <form method="dialog" class="dialog-inner">
+        <header class="dialog-head">
+          <h2>Ajuda</h2>
+          <button class="btn-icon" value="close" aria-label="Fechar"><svg class="icon"><use href="#i-close" /></svg></button>
+        </header>
+        <div class="dialog-body help-body" id="help-body"></div>
+        <footer class="dialog-foot"><button class="btn-primary" value="close">Fechar</button></footer>
+      </form>
+    </dialog>
+
+    <div class="toast" id="toast" role="status"></div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
