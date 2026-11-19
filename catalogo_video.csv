@@ -1,0 +1,60 @@
+architecture,title,modality,tasks,accepts_video,doc
+exaone4_5,EXAONE-4.5,text,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/exaone4_5
+hy_v4_vl,HYV4VL,text,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/hy_v4_vl
+minimax_m3_vl,MiniMax-M3-VL,text,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/minimax_m3_vl
+muse_spark,Muse Spark Open,text,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/muse_spark
+muse_glimmer,MuseGlimmer,text,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/muse_glimmer
+nemotron_h_omni,NemotronH Omni,text,Image/video + text -> text (VLM chat),True,model_doc/nemotron_h_omni
+qwen3_5,Qwen3.5,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Image/video + text -> text (VLM chat),True,model_doc/qwen3_5
+qwen3_5_moe,Qwen3.5 Moe,text,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),True,model_doc/qwen3_5_moe
+qwen4_exp,Qwen4-Exp,text,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),True,model_doc/qwen4_exp
+videomt,VidEoMT,vision,Segmentation (panoptic/instance/semantic),True,model_doc/videomt
+pe_video,PE Video,video,Feature extraction / backbone,True,model_doc/pe_video
+sam2_video,SAM2 Video,video,Feature extraction / backbone,True,model_doc/sam2_video
+sam3_tracker_video,Sam3TrackerVideo,video,Feature extraction / backbone,True,model_doc/sam3_tracker_video
+timesformer,TimeSformer,video,Feature extraction / backbone,True,model_doc/timesformer
+vjepa2,V-JEPA 2,video,Feature extraction / backbone,True,model_doc/vjepa2
+videomae,VideoMAE,video,Feature extraction / backbone,True,model_doc/videomae
+videoprism,VideoPrism,video,Feature extraction / backbone,True,model_doc/videoprism
+vivit,ViViT,video,Feature extraction / backbone,True,model_doc/vivit
+cohere_compass,CohereCompass,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/cohere_compass
+cosmos3_edge,Cosmos3 Edge,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/cosmos3_edge
+cosmos3_omni,Cosmos3 Omni,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/cosmos3_omni
+dots3_note,Dots 3 Note Preview,multimodal,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),True,model_doc/dots3_note
+edgetam_video,EdgeTamVideo,multimodal,Feature extraction / backbone,True,model_doc/edgetam_video
+embedding_gemma2,EmbeddingGemma2,multimodal,Feature extraction / backbone,True,model_doc/embedding_gemma2
+ernie4_5_vl_moe,ernie4_5_vl_moe,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/ernie4_5_vl_moe
+gemma4,Gemma4,multimodal,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),True,model_doc/gemma4
+gemma4_unified,Gemma4 Unified,multimodal,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),True,model_doc/gemma4_unified
+glm5_next,GLM-5.3-Flash,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/glm5_next
+glm46v,Glm46V,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/glm46v
+glm4v,glm4v,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/glm4v
+glm4v_moe,glm4v_moe,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/glm4v_moe
+glmga,Glmga,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/glmga
+glm_ocr,GlmOcr,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/glm_ocr
+hyperclovax_vision_v2,HyperCLOVAX Vision V2,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/hyperclovax_vision_v2
+instructblipvideo,InstructBlipVideo,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/instructblipvideo
+internvl,InternVL,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/internvl
+kimi_k25,KimiK-2.5,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/kimi_k25
+lfm3_vl,LFM3-VL,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/lfm3_vl
+llava_next_video,LLaVa-NeXT-Video,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/llava_next_video
+llava_onevision,LLaVA-Onevision,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/llava_onevision
+minicpm_ocr,MiniCPM-OCR,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/minicpm_ocr
+minicpmv4_6,MiniCPM-V,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/minicpmv4_6
+minicpmv4_7,MiniCPM-V 4.7,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/minicpmv4_7
+molmo2,Molmo2,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/molmo2
+pe_audio_video,PE Audio Video,multimodal,Feature extraction / backbone,True,model_doc/pe_audio_video
+perception_lm,PerceptionLM,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/perception_lm
+qianfan_ocr,QianfanOCR,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/qianfan_ocr
+qwen2_5_omni,Qwen2.5-Omni,multimodal,Any-to-any / omni; Text-to-speech / audio,True,model_doc/qwen2_5_omni
+qwen2_5_vl,Qwen2.5-VL,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/qwen2_5_vl
+qwen2_vl,Qwen2VL,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/qwen2_vl
+qwen3_omni_moe,Qwen3-Omni-MoE,multimodal,Any-to-any / omni; Text-to-speech / audio,True,model_doc/qwen3_omni_moe
+qwen3_vl,Qwen3VL,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/qwen3_vl
+qwen3_vl_moe,Qwen3VLMoe,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/qwen3_vl_moe
+sam3_video,SAM3 Video,multimodal,Feature extraction / backbone,True,model_doc/sam3_video
+smolvlm,SmolVLM,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/smolvlm
+tvp,TVP,multimodal,Feature extraction / backbone,True,model_doc/tvp
+video_llama_3,VideoLlama3,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/video_llama_3
+video_llava,VideoLlava,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),True,model_doc/video_llava
+xclip,X-CLIP,multimodal,Feature extraction / backbone,True,model_doc/xclip

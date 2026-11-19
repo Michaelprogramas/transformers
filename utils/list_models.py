@@ -50,6 +50,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 TOCTREE_PATH = REPO_ROOT / "docs/source/en/_toctree.yml"
 AUTO_MODELING_PATH = REPO_ROOT / "src/transformers/models/auto/modeling_auto.py"
+MODELS_DIR = REPO_ROOT / "src/transformers/models"
 HUB_API = "https://huggingface.co/api"
 
 MODALITIES = {
@@ -144,6 +145,7 @@ class Architecture:
     modality: str
     doc: str  # e.g. "model_doc/qwen3"
     tasks: list[str] = field(default_factory=list)
+    accepts_video: bool = False  # filled by build_catalog(with_video=True)
 
 
 # ---------------------------------------------------------------------------------------------
@@ -263,6 +265,45 @@ def load_catalog() -> list[Architecture]:
     return catalog
 
 
+# Doc slugs that do not map 1:1 to a folder in `src/transformers/models`.
+DOC_TO_MODEL_DIR = {
+    "xclip": "x_clip",
+    "kosmos-2": "kosmos2",
+    "dinov3": "dinov3_vit",
+    "deplot": "deplot",
+    "granitevision": "granite4_vision",
+    "matcha": "matcha",
+    "mms": "mms",
+}
+
+
+def _model_dir(slug: str) -> Path | None:
+    for candidate in (slug.replace("-", "_"), DOC_TO_MODEL_DIR.get(slug, ""), slug):
+        if candidate and (MODELS_DIR / candidate).is_dir():
+            return MODELS_DIR / candidate
+    return None
+
+
+def _accepts_video(model_dir: Path | None) -> bool:
+    """Whether the model takes video input (a video file, URL or list of frames).
+
+    Three independent signals are checked, because models wire video in different ways:
+    - a `video_processing_<name>.py` file, i.e. its own video processor (which subclasses the shared
+      `BaseVideoProcessor.__call__(videos, ...)`);
+    - a processor that builds a `video_processor` (used for models without a dedicated file);
+    - the model declaring `"video"` in `input_modalities`.
+    """
+    if model_dir is None:
+        return False
+    if any(model_dir.glob("video_processing_*.py")):
+        return True
+    for path in list(model_dir.glob("processing_*.py")) + list(model_dir.glob("modeling_*.py")):
+        text = path.read_text(errors="ignore")
+        if "video_processor" in text or re.search(r'input_modalities\s*=\s*\([^)]*"video"', text):
+            return True
+    return False
+
+
 def load_task_mappings() -> dict[str, list[str]]:
     text = AUTO_MODELING_PATH.read_text(encoding="utf-8")
     mappings = {}
@@ -275,8 +316,11 @@ def load_task_mappings() -> dict[str, list[str]]:
     return mappings
 
 
-def build_catalog() -> list[Architecture]:
+def build_catalog(with_video: bool = False) -> list[Architecture]:
     catalog = load_catalog()
+    if with_video:
+        for arch in catalog:
+            arch.accepts_video = _accepts_video(_model_dir(arch.slug))
     mappings = load_task_mappings()
     by_slug = {a.slug: a for a in catalog}
     for auto_class, task, var_name in TASK_MAPPINGS:
@@ -403,11 +447,13 @@ def write_csv(path: Path, rows: list[dict], fieldnames: list[str]) -> None:
 # Output modes
 # ---------------------------------------------------------------------------------------------
 def cmd_list(args) -> None:
-    catalog = build_catalog()
+    catalog = build_catalog(with_video=args.video or args.show_tasks)
     modalities = [m for m in MODALITIES.values() if not args.modality or m in args.modality]
     selected = [a for a in catalog if a.modality in modalities]
     if args.tasks_filter:
         selected = [a for a in selected if any(args.tasks_filter in t for t in a.tasks)]
+    if args.video:
+        selected = [a for a in selected if a.accepts_video]
 
     if args.csv:
         write_csv(
@@ -418,11 +464,12 @@ def cmd_list(args) -> None:
                     "title": a.title,
                     "modality": a.modality,
                     "tasks": "; ".join(a.tasks),
+                    "accepts_video": a.accepts_video,
                     "doc": a.doc,
                 }
                 for a in selected
             ],
-            ["architecture", "title", "modality", "tasks", "doc"],
+            ["architecture", "title", "modality", "tasks", "accepts_video", "doc"],
         )
         return
     if args.json:
@@ -437,7 +484,8 @@ def cmd_list(args) -> None:
         print(f"== {modality.replace('-', ' ').title()} ({len(group)}) ==")
         for arch in group:
             tasks = f"   [{', '.join(arch.tasks)}]" if arch.tasks and args.show_tasks else ""
-            print(f"  - {arch.title:<38} {arch.slug:<32} {tasks}")
+            video = "  [video]" if arch.accepts_video else ""
+            print(f"  - {arch.title:<38} {arch.slug:<32} {tasks}{video}")
         print()
     print("Tip: `--tasks` shows which AutoModelFor* class each architecture is wired to.")
 
@@ -459,7 +507,7 @@ def cmd_tasks(args) -> None:
 
 
 def cmd_hub(args) -> None:
-    catalog = build_catalog()
+    catalog = build_catalog(with_video=args.video)
     catalog_by_slug = {a.slug: a for a in catalog}
 
     if args.architectures:
@@ -472,6 +520,8 @@ def cmd_hub(args) -> None:
         architectures = [a for a in catalog if a.modality in modalities]
         if args.tasks_filter:
             architectures = [a for a in architectures if any(args.tasks_filter in t for t in a.tasks)]
+        if args.video:
+            architectures = [a for a in architectures if a.accepts_video]
     if not architectures:
         print("Nothing to query: adjust --modality / --tasks-filter.", file=sys.stderr)
         return
@@ -542,6 +592,9 @@ def main() -> None:
     parser.add_argument("--csv", help="write results to this CSV path instead of printing a table")
     parser.add_argument("--json", action="store_true", help="print results as JSON")
     parser.add_argument("--show-tasks", action="store_true", help="--list: show tasks next to each architecture")
+    parser.add_argument(
+        "--video", action="store_true", help="keep only architectures whose processor accepts video input"
+    )
     args = parser.parse_args()
 
     if not TOCTREE_PATH.exists() or not AUTO_MODELING_PATH.exists():

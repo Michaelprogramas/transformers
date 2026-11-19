@@ -68,6 +68,18 @@ class TestListModels(unittest.TestCase):
         self.assertIn("Speech recognition (seq2seq, Whisper-style)", catalog["whisper"].tasks)
         self.assertIn("Image/video + text -> text (VLM chat)", catalog["llava"].tasks)
 
+    def test_video_capable_architectures(self):
+        catalog = {arch.slug: arch for arch in list_models.build_catalog(with_video=True)}
+        video_arches = {slug for slug, arch in catalog.items() if arch.accepts_video}
+        # Models with a dedicated video processor, with video wired only through the processor, and
+        # with `input_modalities = (..., "video", ...)` must all be detected.
+        for slug in ("timesformer", "videomae", "vivit", "sam2_video", "xclip", "qwen2_5_vl", "qwen3_vl_moe"):
+            self.assertIn(slug, video_arches)
+        # Image-only / text-only models must not be flagged.
+        for slug in ("vit", "bert", "whisper", "llava", "sam"):
+            self.assertNotIn(slug, video_arches)
+        self.assertGreater(len(video_arches), 40)
+
     def test_classify_hub_models(self):
         classify = list_models.classify
         self.assertEqual(classify({"gated": False, "tags": ["license:apache-2.0"], "downloads": 10}), "free")
