@@ -1,0 +1,556 @@
+architecture,title,modality,tasks,doc
+axk1,A.X-K1,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/axk1
+axk2,A.X-K2,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/axk2
+afmoe,AFMoE,text,Feature extraction / backbone; Text generation,model_doc/afmoe
+albert,ALBERT,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/albert
+apertus,Apertus,text,Feature extraction / backbone; Text generation; Token classification / NER,model_doc/apertus
+arcee,Arcee,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/arcee
+bamba,Bamba,text,Feature extraction / backbone; Text generation,model_doc/bamba
+bart,BART,text,"Feature extraction / backbone; Text generation; Seq2seq generation (translation, summarization); Masked language modeling; Text classification; Extractive question answering",model_doc/bart
+barthez,BARThez,text,,model_doc/barthez
+bartpho,BARTpho,text,,model_doc/bartpho
+beam,Beam,text,Feature extraction / backbone; Text generation; Token classification / NER,model_doc/beam
+bert,BERT,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/bert
+bert-generation,BertGeneration,text,Feature extraction / backbone; Text generation,model_doc/bert-generation
+bert-japanese,BertJapanese,text,,model_doc/bert-japanese
+bertweet,BERTweet,text,,model_doc/bertweet
+big_bird,BigBird,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/big_bird
+bigbird_pegasus,BigBirdPegasus,text,"Feature extraction / backbone; Text generation; Seq2seq generation (translation, summarization); Text classification; Extractive question answering",model_doc/bigbird_pegasus
+biogpt,BioGpt,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/biogpt
+bitnet,BitNet,text,Feature extraction / backbone; Text generation,model_doc/bitnet
+blenderbot,Blenderbot,text,"Feature extraction / backbone; Text generation; Seq2seq generation (translation, summarization)",model_doc/blenderbot
+blenderbot-small,Blenderbot Small,text,"Feature extraction / backbone; Text generation; Seq2seq generation (translation, summarization)",model_doc/blenderbot-small
+bloom,BLOOM,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/bloom
+blt,BLT,text,Feature extraction / backbone; Text generation,model_doc/blt
+byt5,ByT5,text,,model_doc/byt5
+camembert,CamemBERT,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/camembert
+canine,CANINE,text,Feature extraction / backbone; Text classification; Token classification / NER; Extractive question answering,model_doc/canine
+codegen,CodeGen,text,Feature extraction / backbone; Text generation,model_doc/codegen
+code_llama,CodeLlama,text,,model_doc/code_llama
+cohere,Cohere,text,Feature extraction / backbone; Text generation,model_doc/cohere
+cohere2,Cohere2,text,Feature extraction / backbone; Text generation,model_doc/cohere2
+cohere2_moe,Cohere2Moe,text,Feature extraction / backbone; Text generation,model_doc/cohere2_moe
+convbert,ConvBERT,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/convbert
+cpm,CPM,text,,model_doc/cpm
+cpmant,CPMANT,text,Feature extraction / backbone; Text generation,model_doc/cpmant
+ctrl,CTRL,text,Feature extraction / backbone; Text generation; Text classification,model_doc/ctrl
+dbrx,DBRX,text,Feature extraction / backbone; Text generation,model_doc/dbrx
+deberta,DeBERTa,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/deberta
+deberta-v2,DeBERTa-v2,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/deberta-v2
+deepseek_ocr2,DeepSeek-OCR-2,text,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/deepseek_ocr2
+deepseek_v2,DeepSeek-V2,text,Feature extraction / backbone; Text generation; Text classification,model_doc/deepseek_v2
+deepseek_v3,DeepSeek-V3,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/deepseek_v3
+deepseek_v32,DeepSeek-V3.2,text,Feature extraction / backbone; Text generation,model_doc/deepseek_v32
+deepseek_v4,DeepSeek-V4,text,Feature extraction / backbone; Text generation,model_doc/deepseek_v4
+diffllama,DiffLlama,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/diffllama
+distilbert,DistilBERT,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/distilbert
+doge,Doge,text,Feature extraction / backbone; Text generation; Text classification,model_doc/doge
+dots1,dots1,text,Feature extraction / backbone; Text generation,model_doc/dots1
+dpr,DPR,text,Feature extraction / backbone,model_doc/dpr
+electra,ELECTRA,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/electra
+encoder-decoder,Encoder Decoder Models,text,"Seq2seq generation (translation, summarization)",model_doc/encoder-decoder
+ernie,ERNIE,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/ernie
+ernie4_5,Ernie4_5,text,Feature extraction / backbone; Text generation,model_doc/ernie4_5
+ernie4_5_moe,Ernie4_5_MoE,text,Feature extraction / backbone; Text generation,model_doc/ernie4_5_moe
+esm,ESM,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER,model_doc/esm
+esmc,ESMC,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER,model_doc/esmc
+esmfold2,ESMFold2,text,,model_doc/esmfold2
+eurobert,EuroBERT,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER,model_doc/eurobert
+exaone4,EXAONE-4.0,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/exaone4
+exaone4_5,EXAONE-4.5,text,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/exaone4_5
+exaone_moe,EXAONE-MoE,text,Feature extraction / backbone; Text generation,model_doc/exaone_moe
+falcon,Falcon,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/falcon
+falcon3,Falcon3,text,,model_doc/falcon3
+falcon_h1,FalconH1,text,Feature extraction / backbone; Text generation,model_doc/falcon_h1
+falcon_mamba,FalconMamba,text,Feature extraction / backbone; Text generation,model_doc/falcon_mamba
+flan-t5,FLAN-T5,text,,model_doc/flan-t5
+flan-ul2,FLAN-UL2,text,,model_doc/flan-ul2
+flaubert,FlauBERT,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/flaubert
+flex_olmo,FlexOlmo,text,Feature extraction / backbone; Text generation,model_doc/flex_olmo
+flint,Flint,text,Feature extraction / backbone; Text generation,model_doc/flint
+fnet,FNet,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/fnet
+fsmt,FSMT,text,"Feature extraction / backbone; Seq2seq generation (translation, summarization)",model_doc/fsmt
+fun_asr_nano,Fun-ASR-Nano,text,"Feature extraction / backbone; Any-to-any / omni; Speech recognition (seq2seq, Whisper-style)",model_doc/fun_asr_nano
+funnel,Funnel Transformer,text,Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/funnel
+fuyu,Fuyu,text,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),model_doc/fuyu
+gemma,Gemma,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/gemma
+gemma2,Gemma2,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/gemma2
+glm,GLM-4,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/glm
+glm4,GLM-4-0414,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/glm4
+glm4_moe,"GLM-4.5, GLM-4.6, GLM-4.7",text,Feature extraction / backbone; Text generation,model_doc/glm4_moe
+glm4_moe_lite,GLM-4.7-Flash,text,Feature extraction / backbone; Text generation,model_doc/glm4_moe_lite
+glm_moe_dsa,"GLM-5, GLM-5.1, GLM-5.2, GLM-5.3",text,Feature extraction / backbone; Text generation,model_doc/glm_moe_dsa
+glm_image,GLM-Image,text,Feature extraction / backbone,model_doc/glm_image
+openai-gpt,GPT,text,Feature extraction / backbone; Text generation; Text classification,model_doc/openai-gpt
+gpt_neo,GPT Neo,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/gpt_neo
+gpt_neox,GPT NeoX,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/gpt_neox
+gpt_neox_japanese,GPT NeoX Japanese,text,Feature extraction / backbone; Text generation,model_doc/gpt_neox_japanese
+gptj,GPT-J,text,Feature extraction / backbone; Text generation; Text classification; Extractive question answering,model_doc/gptj
+gpt2,GPT2,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/gpt2
+gpt_bigcode,GPTBigCode,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/gpt_bigcode
+gpt_oss,GptOss,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/gpt_oss
+gpt-sw3,GPTSw3,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/gpt-sw3
+granite,Granite,text,Feature extraction / backbone; Text generation,model_doc/granite
+granitemoe,GraniteMoe,text,Feature extraction / backbone; Text generation,model_doc/granitemoe
+granitemoehybrid,GraniteMoeHybrid,text,Feature extraction / backbone; Text generation,model_doc/granitemoehybrid
+granitemoeshared,GraniteMoeShared,text,Feature extraction / backbone; Text generation,model_doc/granitemoeshared
+granitemoe_swa,GraniteMoeSWA,text,Feature extraction / backbone; Text generation,model_doc/granitemoe_swa
+granite_swa,GraniteSWA,text,Feature extraction / backbone; Text generation,model_doc/granite_swa
+gte,GTE,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER,model_doc/gte
+helium,Helium,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/helium
+herbert,HerBERT,text,,model_doc/herbert
+hrm_text,HRM-Text,text,Feature extraction / backbone; Text generation,model_doc/hrm_text
+hunyuan_v1_dense,HunYuanDenseV1,text,Feature extraction / backbone; Text generation; Text classification,model_doc/hunyuan_v1_dense
+hunyuan_v1_moe,HunYuanMoEV1,text,Feature extraction / backbone; Text generation; Text classification,model_doc/hunyuan_v1_moe
+hunyuan_vl,HunYuanVL,text,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/hunyuan_vl
+hyperclovax,HyperCLOVAX,text,Feature extraction / backbone; Text generation,model_doc/hyperclovax
+hy_v3,HYV3,text,Feature extraction / backbone; Text generation,model_doc/hy_v3
+hy_v4,HYV4,text,Feature extraction / backbone; Text generation,model_doc/hy_v4
+hy_v4_vl,HYV4VL,text,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/hy_v4_vl
+ibert,I-BERT,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/ibert
+internlm3,InternLM3,text,Feature extraction / backbone; Text generation,model_doc/internlm3
+iquestcoder,IQuestCoder,text,Feature extraction / backbone; Text generation,model_doc/iquestcoder
+jais2,Jais2,text,Feature extraction / backbone; Text generation,model_doc/jais2
+jamba,Jamba,text,Feature extraction / backbone; Text generation; Text classification,model_doc/jamba
+jetmoe,JetMoe,text,Feature extraction / backbone; Text generation; Text classification,model_doc/jetmoe
+jev,JEV,text,,model_doc/jev
+jina_embeddings_v3,jina_embeddings_v3,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/jina_embeddings_v3
+kimi_linear,KimiLinear,text,Feature extraction / backbone; Text generation,model_doc/kimi_linear
+kolibri1,Kolibri1,text,Feature extraction / backbone; Text generation,model_doc/kolibri1
+laguna,Laguna,text,Feature extraction / backbone; Text generation,model_doc/laguna
+lara_mini,Lara Mini,text,Feature extraction / backbone; Text generation,model_doc/lara_mini
+led,LED,text,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Extractive question answering",model_doc/led
+lfm2,LFM2,text,Feature extraction / backbone; Text generation,model_doc/lfm2
+lfm2_moe,LFM2Moe,text,Feature extraction / backbone; Text generation,model_doc/lfm2_moe
+lfm3,LFM3,text,Feature extraction / backbone; Text generation,model_doc/lfm3
+bailing_hybrid,Ling 3,text,Feature extraction / backbone; Text generation,model_doc/bailing_hybrid
+llama,LLaMA,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/llama
+llama2,Llama2,text,,model_doc/llama2
+llama3,Llama3,text,,model_doc/llama3
+longcat_flash,LongCatFlash,text,Feature extraction / backbone; Text generation,model_doc/longcat_flash
+longformer,Longformer,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/longformer
+longt5,LongT5,text,"Feature extraction / backbone; Seq2seq generation (translation, summarization)",model_doc/longt5
+luke,LUKE,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/luke
+m2m_100,M2M100,text,"Feature extraction / backbone; Seq2seq generation (translation, summarization)",model_doc/m2m_100
+madlad-400,MADLAD-400,text,,model_doc/madlad-400
+mamba,Mamba,text,Feature extraction / backbone; Text generation,model_doc/mamba
+mamba2,Mamba2,text,Feature extraction / backbone; Text generation,model_doc/mamba2
+marian,MarianMT,text,"Feature extraction / backbone; Text generation; Seq2seq generation (translation, summarization)",model_doc/marian
+markuplm,MarkupLM,text,Feature extraction / backbone; Text classification; Token classification / NER; Extractive question answering,model_doc/markuplm
+mbart,MBart and MBart-50,text,"Feature extraction / backbone; Text generation; Seq2seq generation (translation, summarization); Masked language modeling; Text classification; Extractive question answering",model_doc/mbart
+megatron-bert,MegatronBERT,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/megatron-bert
+mellum,Mellum,text,Feature extraction / backbone; Text generation,model_doc/mellum
+mimo_v2_flash,MiMo-V2-Flash,text,Feature extraction / backbone; Text generation,model_doc/mimo_v2_flash
+minicpm3,MiniCPM3,text,Feature extraction / backbone; Text generation; Text classification,model_doc/minicpm3
+minimax,MiniMax,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/minimax
+minimax_m2,MiniMax-M2,text,Feature extraction / backbone; Text generation,model_doc/minimax_m2
+minimax_m3_vl,MiniMax-M3-VL,text,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/minimax_m3_vl
+ministral,Ministral,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/ministral
+ministral3,Ministral3,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/ministral3
+mistral,Mistral,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/mistral
+mixtral,Mixtral,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/mixtral
+mluke,mLUKE,text,,model_doc/mluke
+mobilebert,MobileBERT,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/mobilebert
+modernbert,ModernBert,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/modernbert
+modernbert-decoder,ModernBERTDecoder,text,Feature extraction / backbone; Text generation; Text classification,model_doc/modernbert-decoder
+modernvbert,ModernVBert,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER,model_doc/modernvbert
+mpnet,MPNet,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/mpnet
+mpt,MPT,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/mpt
+mra,MRA,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/mra
+mt5,MT5,text,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Text classification; Token classification / NER; Extractive question answering",model_doc/mt5
+muse_spark,Muse Spark Open,text,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/muse_spark
+muse_glimmer,MuseGlimmer,text,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/muse_glimmer
+muse_glimmer_assistant,MuseGlimmerAssistant,text,Feature extraction / backbone,model_doc/muse_glimmer_assistant
+mvp,MVP,text,"Feature extraction / backbone; Text generation; Seq2seq generation (translation, summarization); Masked language modeling; Text classification; Extractive question answering",model_doc/mvp
+myt5,myt5,text,,model_doc/myt5
+nanochat,NanoChat,text,Feature extraction / backbone; Text generation,model_doc/nanochat
+nemotron,Nemotron,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/nemotron
+nemotron_h,NemotronH,text,Feature extraction / backbone; Text generation,model_doc/nemotron_h
+nemotron_h_omni,NemotronH Omni,text,Image/video + text -> text (VLM chat),model_doc/nemotron_h_omni
+nllb,NLLB,text,,model_doc/nllb
+nllb-moe,NLLB-MoE,text,"Feature extraction / backbone; Seq2seq generation (translation, summarization)",model_doc/nllb-moe
+nomic_bert,NomicBERT,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER,model_doc/nomic_bert
+nystromformer,Nyströmformer,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/nystromformer
+olmo,OLMo,text,Feature extraction / backbone; Text generation; Text classification,model_doc/olmo
+olmo2,OLMo2,text,Feature extraction / backbone; Text generation; Text classification,model_doc/olmo2
+olmo3,Olmo3,text,Feature extraction / backbone; Text generation; Text classification,model_doc/olmo3
+olmoe,OLMoE,text,Feature extraction / backbone; Text generation,model_doc/olmoe
+olmo_hybrid,OlmoHybrid,text,Feature extraction / backbone; Text generation,model_doc/olmo_hybrid
+openai_privacy_filter,OpenAI Privacy Filter,text,Feature extraction / backbone; Token classification / NER,model_doc/openai_privacy_filter
+opt,OPT,text,Feature extraction / backbone; Text generation; Text classification; Extractive question answering,model_doc/opt
+pegasus,Pegasus,text,"Feature extraction / backbone; Text generation; Seq2seq generation (translation, summarization)",model_doc/pegasus
+pegasus_x,PEGASUS-X,text,"Feature extraction / backbone; Seq2seq generation (translation, summarization)",model_doc/pegasus_x
+persimmon,Persimmon,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/persimmon
+phi,Phi,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/phi
+phi3,Phi-3,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/phi3
+phimoe,PhiMoE,text,Feature extraction / backbone; Text generation; Text classification,model_doc/phimoe
+phobert,PhoBERT,text,,model_doc/phobert
+plbart,PLBart,text,"Feature extraction / backbone; Text generation; Seq2seq generation (translation, summarization); Text classification",model_doc/plbart
+prophetnet,ProphetNet,text,"Feature extraction / backbone; Text generation; Seq2seq generation (translation, summarization)",model_doc/prophetnet
+qwen2,Qwen2,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/qwen2
+qwen2_moe,Qwen2MoE,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/qwen2_moe
+qwen3,Qwen3,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/qwen3
+qwen3_5,Qwen3.5,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Image/video + text -> text (VLM chat),model_doc/qwen3_5
+qwen3_5_moe,Qwen3.5 Moe,text,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),model_doc/qwen3_5_moe
+qwen3_moe,Qwen3MoE,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/qwen3_moe
+qwen3_next,Qwen3Next,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/qwen3_next
+qwen4_exp,Qwen4-Exp,text,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),model_doc/qwen4_exp
+rag,RAG,text,,model_doc/rag
+recurrent_gemma,RecurrentGemma,text,Feature extraction / backbone; Text generation,model_doc/recurrent_gemma
+reformer,Reformer,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Extractive question answering,model_doc/reformer
+rembert,RemBERT,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/rembert
+roberta,RoBERTa,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/roberta
+roberta-prelayernorm,RoBERTa-PreLayerNorm,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/roberta-prelayernorm
+roc_bert,RoCBert,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/roc_bert
+roformer,RoFormer,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/roformer
+rwkv,RWKV,text,Feature extraction / backbone; Text generation,model_doc/rwkv
+seed_oss,Seed-Oss,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/seed_oss
+smollm3,SmolLM3,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/smollm3
+solar_open,SolarOpen,text,Feature extraction / backbone; Text generation,model_doc/solar_open
+splinter,Splinter,text,Feature extraction / backbone; Extractive question answering,model_doc/splinter
+squeezebert,SqueezeBERT,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/squeezebert
+stablelm,StableLm,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/stablelm
+starcoder2,Starcoder2,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER,model_doc/starcoder2
+step3p7,Step3p7,text,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/step3p7
+switch_transformers,SwitchTransformers,text,"Feature extraction / backbone; Seq2seq generation (translation, summarization)",model_doc/switch_transformers
+t5,T5,text,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Text classification; Token classification / NER; Extractive question answering",model_doc/t5
+t5gemma,T5Gemma,text,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Text classification; Token classification / NER",model_doc/t5gemma
+t5gemma2,T5Gemma2,text,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Text classification; Token classification / NER; Image/video + text -> text (VLM chat)",model_doc/t5gemma2
+t5v1.1,T5v1.1,text,,model_doc/t5v1.1
+ul2,UL2,text,,model_doc/ul2
+ultrabert,UltraBERT,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/ultrabert
+ultravbert,UltraVBert,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER,model_doc/ultravbert
+umt5,UMT5,text,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Text classification; Token classification / NER; Extractive question answering",model_doc/umt5
+vaultgemma,VaultGemma,text,Feature extraction / backbone; Text generation,model_doc/vaultgemma
+xmod,X-MOD,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/xmod
+xglm,XGLM,text,Feature extraction / backbone; Text generation,model_doc/xglm
+xlm,XLM,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/xlm
+xlm-roberta,XLM-RoBERTa,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/xlm-roberta
+xlm-roberta-xl,XLM-RoBERTa-XL,text,Feature extraction / backbone; Text generation; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/xlm-roberta-xl
+xlm-v,XLM-V,text,,model_doc/xlm-v
+xlnet,XLNet,text,Feature extraction / backbone; Text generation; Text classification; Token classification / NER; Extractive question answering,model_doc/xlnet
+xlstm,xLSTM,text,Feature extraction / backbone; Text generation,model_doc/xlstm
+yoso,YOSO,text,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER; Extractive question answering,model_doc/yoso
+youtu,Youtu-LLM,text,Feature extraction / backbone; Text generation,model_doc/youtu
+zamba,Zamba,text,Feature extraction / backbone; Text generation; Text classification,model_doc/zamba
+zamba2,Zamba2,text,Feature extraction / backbone; Text generation; Text classification,model_doc/zamba2
+zaya,ZAYA,text,Feature extraction / backbone; Text generation,model_doc/zaya
+aimv2,Aimv2,vision,Feature extraction / backbone,model_doc/aimv2
+beit,BEiT,vision,Feature extraction / backbone; Image classification,model_doc/beit
+bit,BiT,vision,Feature extraction / backbone; Image classification,model_doc/bit
+chmv2,CHMv2,vision,Depth estimation,model_doc/chmv2
+conditional_detr,Conditional DETR,vision,Feature extraction / backbone; Object detection,model_doc/conditional_detr
+convnext,ConvNeXT,vision,Feature extraction / backbone; Image classification,model_doc/convnext
+convnextv2,ConvNeXTV2,vision,Feature extraction / backbone; Image classification,model_doc/convnextv2
+cvt,CvT,vision,Feature extraction / backbone; Image classification,model_doc/cvt
+d_fine,D-FINE,vision,Feature extraction / backbone; Object detection,model_doc/d_fine
+dab-detr,DAB-DETR,vision,Feature extraction / backbone; Object detection,model_doc/dab-detr
+deformable_detr,Deformable DETR,vision,Feature extraction / backbone; Object detection,model_doc/deformable_detr
+deimv2,DEIMv2,vision,Feature extraction / backbone; Object detection,model_doc/deimv2
+deit,DeiT,vision,Feature extraction / backbone,model_doc/deit
+depth_anything,Depth Anything,vision,Depth estimation,model_doc/depth_anything
+depth_anything_v2,Depth Anything V2,vision,,model_doc/depth_anything_v2
+depth_pro,DepthPro,vision,Feature extraction / backbone; Depth estimation,model_doc/depth_pro
+detr,DETR,vision,Feature extraction / backbone; Object detection; Segmentation (panoptic/instance/semantic),model_doc/detr
+dinat,DiNAT,vision,Feature extraction / backbone; Image classification,model_doc/dinat
+dinov2,DINOV2,vision,Feature extraction / backbone; Image classification,model_doc/dinov2
+dinov2_with_registers,DINOv2 with Registers,vision,Feature extraction / backbone; Image classification,model_doc/dinov2_with_registers
+dinov3,DINOv3,vision,,model_doc/dinov3
+dpt,DPT,vision,Feature extraction / backbone; Depth estimation,model_doc/dpt
+efficientloftr,EfficientLoFTR,vision,Feature extraction / backbone,model_doc/efficientloftr
+efficientnet,EfficientNet,vision,Feature extraction / backbone; Image classification,model_doc/efficientnet
+eomt,EoMT,vision,Segmentation (panoptic/instance/semantic),model_doc/eomt
+eomt_dinov3,EoMT-DINOv3,vision,Segmentation (panoptic/instance/semantic),model_doc/eomt_dinov3
+focalnet,FocalNet,vision,Feature extraction / backbone; Image classification,model_doc/focalnet
+glpn,GLPN,vision,Feature extraction / backbone; Depth estimation,model_doc/glpn
+hgnet_v2,HGNet-V2,vision,Feature extraction / backbone; Image classification,model_doc/hgnet_v2
+hiera,Hiera,vision,Feature extraction / backbone; Image classification,model_doc/hiera
+ijepa,I-JEPA,vision,Feature extraction / backbone; Image classification,model_doc/ijepa
+imagegpt,ImageGPT,vision,Feature extraction / backbone; Image classification,model_doc/imagegpt
+levit,LeViT,vision,Feature extraction / backbone,model_doc/levit
+lightglue,LightGlue,vision,Feature extraction / backbone,model_doc/lightglue
+lw_detr,LW-DETR,vision,Feature extraction / backbone; Object detection,model_doc/lw_detr
+mask2former,Mask2Former,vision,Feature extraction / backbone; Segmentation (panoptic/instance/semantic),model_doc/mask2former
+maskformer,MaskFormer,vision,Feature extraction / backbone; Segmentation (panoptic/instance/semantic),model_doc/maskformer
+mlcd,MLCD,vision,Feature extraction / backbone,model_doc/mlcd
+mobilenet_v1,MobileNetV1,vision,Feature extraction / backbone; Image classification,model_doc/mobilenet_v1
+mobilenet_v2,MobileNetV2,vision,Feature extraction / backbone; Image classification,model_doc/mobilenet_v2
+mobilevit,MobileViT,vision,Feature extraction / backbone; Image classification,model_doc/mobilevit
+mobilevitv2,MobileViTV2,vision,Feature extraction / backbone; Image classification,model_doc/mobilevitv2
+pixio,Pixio,vision,Feature extraction / backbone,model_doc/pixio
+poolformer,PoolFormer,vision,Feature extraction / backbone; Image classification,model_doc/poolformer
+prompt_depth_anything,Prompt Depth Anything,vision,Depth estimation,model_doc/prompt_depth_anything
+pvt,Pyramid Vision Transformer (PVT),vision,Feature extraction / backbone; Image classification,model_doc/pvt
+pvt_v2,Pyramid Vision Transformer v2 (PVTv2),vision,Feature extraction / backbone; Image classification,model_doc/pvt_v2
+radio,RADIO,vision,Feature extraction / backbone,model_doc/radio
+regnet,RegNet,vision,Feature extraction / backbone; Image classification,model_doc/regnet
+resnet,ResNet,vision,Feature extraction / backbone; Image classification,model_doc/resnet
+rf_detr,RF-DETR,vision,Feature extraction / backbone; Object detection,model_doc/rf_detr
+rt_detr,RT-DETR,vision,Feature extraction / backbone; Object detection,model_doc/rt_detr
+rt_detr_v2,RT-DETRv2,vision,Feature extraction / backbone; Object detection,model_doc/rt_detr_v2
+sam2,SAM2,vision,Feature extraction / backbone,model_doc/sam2
+sam3_tracker,Sam3Tracker,vision,Feature extraction / backbone,model_doc/sam3_tracker
+sapiens2,Sapiens2,vision,Feature extraction / backbone,model_doc/sapiens2
+segformer,SegFormer,vision,Feature extraction / backbone; Image classification,model_doc/segformer
+seggpt,SegGpt,vision,Feature extraction / backbone,model_doc/seggpt
+sam,Segment Anything,vision,Feature extraction / backbone,model_doc/sam
+sam_hq,Segment Anything High Quality,vision,Feature extraction / backbone,model_doc/sam_hq
+superglue,SuperGlue,vision,,model_doc/superglue
+superpoint,SuperPoint,vision,,model_doc/superpoint
+swiftformer,SwiftFormer,vision,Feature extraction / backbone; Image classification,model_doc/swiftformer
+swin,Swin Transformer,vision,Feature extraction / backbone; Image classification,model_doc/swin
+swinv2,Swin Transformer V2,vision,Feature extraction / backbone; Image classification,model_doc/swinv2
+swin2sr,Swin2SR,vision,Feature extraction / backbone,model_doc/swin2sr
+table-transformer,Table Transformer,vision,Feature extraction / backbone; Object detection,model_doc/table-transformer
+textnet,TextNet,vision,Feature extraction / backbone; Image classification,model_doc/textnet
+timm_wrapper,Timm Wrapper,vision,Feature extraction / backbone; Image classification,model_doc/timm_wrapper
+upernet,UperNet,vision,,model_doc/upernet
+uvdoc,UVDoc,vision,Feature extraction / backbone,model_doc/uvdoc
+videomt,VidEoMT,vision,Segmentation (panoptic/instance/semantic),model_doc/videomt
+vit,Vision Transformer (ViT),vision,Feature extraction / backbone; Image classification,model_doc/vit
+vitdet,ViTDet,vision,Feature extraction / backbone,model_doc/vitdet
+vit_mae,ViTMAE,vision,Feature extraction / backbone,model_doc/vit_mae
+vitmatte,ViTMatte,vision,,model_doc/vitmatte
+vit_msn,ViTMSN,vision,Feature extraction / backbone; Image classification,model_doc/vit_msn
+vitpose,ViTPose,vision,,model_doc/vitpose
+yolos,YOLOS,vision,Feature extraction / backbone; Object detection,model_doc/yolos
+zoedepth,ZoeDepth,vision,Depth estimation,model_doc/zoedepth
+audio-spectrogram-transformer,Audio Spectrogram Transformer,audio,Feature extraction / backbone,model_doc/audio-spectrogram-transformer
+bark,Bark,audio,Feature extraction / backbone; Text-to-speech / audio,model_doc/bark
+canary,Canary,audio,"Feature extraction / backbone; Speech recognition (seq2seq, Whisper-style)",model_doc/canary
+clap,CLAP,audio,Feature extraction / backbone,model_doc/clap
+cohere_asr,Cohere ASR,audio,"Feature extraction / backbone; Speech recognition (seq2seq, Whisper-style)",model_doc/cohere_asr
+csm,CSM,audio,Feature extraction / backbone; Text-to-speech / audio,model_doc/csm
+dac,dac,audio,Feature extraction / backbone,model_doc/dac
+dia,Dia,audio,"Feature extraction / backbone; Speech recognition (seq2seq, Whisper-style)",model_doc/dia
+encodec,EnCodec,audio,Feature extraction / backbone,model_doc/encodec
+fastspeech2_conformer,FastSpeech2Conformer,audio,Feature extraction / backbone; Text-to-spectrogram,model_doc/fastspeech2_conformer
+glmasr,GLM-ASR,audio,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Any-to-any / omni",model_doc/glmasr
+gradium_phonon_tts,Gradium Phonon TTS,audio,Feature extraction / backbone; Text-to-speech / audio,model_doc/gradium_phonon_tts
+granite_speech,GraniteSpeech,audio,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Any-to-any / omni; Speech recognition (seq2seq, Whisper-style)",model_doc/granite_speech
+granite_speech5,GraniteSpeech5,audio,,model_doc/granite_speech5
+granite_speech_plus,GraniteSpeechPlus,audio,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Any-to-any / omni; Speech recognition (seq2seq, Whisper-style)",model_doc/granite_speech_plus
+higgs_audio_v2,Higgs Audio V2,audio,Feature extraction / backbone; Text-to-speech / audio,model_doc/higgs_audio_v2
+higgs_audio_v2_tokenizer,Higgs Audio V2 Tokenizer,audio,Feature extraction / backbone,model_doc/higgs_audio_v2_tokenizer
+hubert,Hubert,audio,Feature extraction / backbone; Speech recognition (CTC),model_doc/hubert
+kyutai_speech_to_text,Kyutai Speech-To-Text,audio,"Feature extraction / backbone; Any-to-any / omni; Speech recognition (seq2seq, Whisper-style)",model_doc/kyutai_speech_to_text
+lasr,LASR,audio,,model_doc/lasr
+mimi,Mimi,audio,Feature extraction / backbone,model_doc/mimi
+mms,MMS,audio,,model_doc/mms
+moonshine,Moonshine,audio,"Feature extraction / backbone; Speech recognition (seq2seq, Whisper-style)",model_doc/moonshine
+moonshine_streaming,Moonshine Streaming,audio,"Feature extraction / backbone; Speech recognition (seq2seq, Whisper-style)",model_doc/moonshine_streaming
+moshi,Moshi,audio,Feature extraction / backbone; Text generation,model_doc/moshi
+moss_transcribe_diarize,MOSS-Transcribe-Diarize,audio,"Feature extraction / backbone; Text generation; Seq2seq generation (translation, summarization); Any-to-any / omni",model_doc/moss_transcribe_diarize
+musicgen,MusicGen,audio,Feature extraction / backbone; Text generation; Text-to-speech / audio,model_doc/musicgen
+musicgen_melody,MusicGen Melody,audio,Feature extraction / backbone; Text generation; Text-to-speech / audio,model_doc/musicgen_melody
+nemotron3_diarization,Nemotron 3 Diarization,audio,Feature extraction / backbone,model_doc/nemotron3_diarization
+nemotron3_5_asr,Nemotron 3.5 ASR,audio,Feature extraction / backbone,model_doc/nemotron3_5_asr
+nemotron3_5_transcribe,Nemotron 3.5 Transcribe,audio,,model_doc/nemotron3_5_transcribe
+nemotron_asr_streaming,Nemotron ASR Streaming,audio,Feature extraction / backbone,model_doc/nemotron_asr_streaming
+neucodec,NeuCodec,audio,Feature extraction / backbone,model_doc/neucodec
+omniasr,Omnilingual ASR,audio,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Any-to-any / omni; Speech recognition (seq2seq, Whisper-style)",model_doc/omniasr
+omniasr_ctc,Omnilingual ASR CTC,audio,Feature extraction / backbone; Speech recognition (CTC),model_doc/omniasr_ctc
+parakeet,Parakeet,audio,,model_doc/parakeet
+pe_audio,PE Audio,audio,Feature extraction / backbone,model_doc/pe_audio
+pocket_tts,Pocket TTS,audio,Feature extraction / backbone; Text-to-speech / audio,model_doc/pocket_tts
+pocket_tts_audio_tokenizer,Pocket TTS Audio Tokenizer,audio,Feature extraction / backbone,model_doc/pocket_tts_audio_tokenizer
+pop2piano,Pop2Piano,audio,"Speech recognition (seq2seq, Whisper-style)",model_doc/pop2piano
+qwen3_asr,Qwen3 ASR,audio,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Token classification / NER; Any-to-any / omni; Speech recognition (seq2seq, Whisper-style)",model_doc/qwen3_asr
+seamless_m4t,Seamless-M4T,audio,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Speech recognition (seq2seq, Whisper-style); Text-to-speech / audio",model_doc/seamless_m4t
+seamless_m4t_v2,SeamlessM4T-v2,audio,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Speech recognition (seq2seq, Whisper-style); Text-to-speech / audio",model_doc/seamless_m4t_v2
+sew,SEW,audio,Feature extraction / backbone; Speech recognition (CTC),model_doc/sew
+sew-d,SEW-D,audio,Feature extraction / backbone; Speech recognition (CTC),model_doc/sew-d
+speech_to_text,Speech2Text,audio,"Feature extraction / backbone; Speech recognition (seq2seq, Whisper-style)",model_doc/speech_to_text
+speecht5,SpeechT5,audio,"Feature extraction / backbone; Speech recognition (seq2seq, Whisper-style); Text-to-spectrogram",model_doc/speecht5
+unispeech,UniSpeech,audio,Feature extraction / backbone; Speech recognition (CTC),model_doc/unispeech
+unispeech-sat,UniSpeech-SAT,audio,Feature extraction / backbone; Speech recognition (CTC),model_doc/unispeech-sat
+univnet,UnivNet,audio,Feature extraction / backbone,model_doc/univnet
+vibevoice,VibeVoice,audio,"Feature extraction / backbone; Speech recognition (seq2seq, Whisper-style); Text-to-speech / audio",model_doc/vibevoice
+vibevoice_acoustic_tokenizer,VibeVoice Acoustic Tokenizer,audio,Feature extraction / backbone,model_doc/vibevoice_acoustic_tokenizer
+vibevoice_asr,VibeVoice ASR,audio,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Any-to-any / omni; Speech recognition (seq2seq, Whisper-style)",model_doc/vibevoice_asr
+vits,VITS,audio,Feature extraction / backbone; Text-to-speech / audio,model_doc/vits
+wav2vec2,Wav2Vec2,audio,Feature extraction / backbone; Speech recognition (CTC),model_doc/wav2vec2
+wav2vec2-bert,Wav2Vec2-BERT,audio,Feature extraction / backbone; Speech recognition (CTC),model_doc/wav2vec2-bert
+wav2vec2-conformer,Wav2Vec2-Conformer,audio,Feature extraction / backbone; Speech recognition (CTC),model_doc/wav2vec2-conformer
+wav2vec2_phoneme,Wav2Vec2Phoneme,audio,,model_doc/wav2vec2_phoneme
+wavlm,WavLM,audio,Feature extraction / backbone; Speech recognition (CTC),model_doc/wavlm
+wavtokenizer,WavTokenizer,audio,Feature extraction / backbone,model_doc/wavtokenizer
+whisper,Whisper,audio,"Feature extraction / backbone; Text generation; Speech recognition (seq2seq, Whisper-style)",model_doc/whisper
+xcodec,X-Codec,audio,Feature extraction / backbone,model_doc/xcodec
+xcodec2,X-Codec2,audio,Feature extraction / backbone,model_doc/xcodec2
+xls_r,XLS-R,audio,,model_doc/xls_r
+xlsr_wav2vec2,XLSR-Wav2Vec2,audio,,model_doc/xlsr_wav2vec2
+pe_video,PE Video,video,Feature extraction / backbone,model_doc/pe_video
+sam2_video,SAM2 Video,video,Feature extraction / backbone,model_doc/sam2_video
+sam3_tracker_video,Sam3TrackerVideo,video,Feature extraction / backbone,model_doc/sam3_tracker_video
+timesformer,TimeSformer,video,Feature extraction / backbone,model_doc/timesformer
+vjepa2,V-JEPA 2,video,Feature extraction / backbone,model_doc/vjepa2
+videomae,VideoMAE,video,Feature extraction / backbone,model_doc/videomae
+videoprism,VideoPrism,video,Feature extraction / backbone,model_doc/videoprism
+vivit,ViViT,video,Feature extraction / backbone,model_doc/vivit
+align,ALIGN,multimodal,Feature extraction / backbone,model_doc/align
+altclip,AltCLIP,multimodal,Feature extraction / backbone,model_doc/altclip
+apertus1p5,Apertus 1.5,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/apertus1p5
+aria,Aria,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/aria
+audioflamingo3,AudioFlamingo3,multimodal,"Feature extraction / backbone; Seq2seq generation (translation, summarization)",model_doc/audioflamingo3
+aya_vision,AyaVision,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/aya_vision
+blip,BLIP,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/blip
+blip-2,BLIP-2,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/blip-2
+bridgetower,BridgeTower,multimodal,Feature extraction / backbone,model_doc/bridgetower
+bros,BROS,multimodal,Feature extraction / backbone; Token classification / NER,model_doc/bros
+chameleon,Chameleon,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/chameleon
+chinese_clip,Chinese-CLIP,multimodal,Feature extraction / backbone,model_doc/chinese_clip
+clip,CLIP,multimodal,Feature extraction / backbone; Image classification,model_doc/clip
+clipseg,CLIPSeg,multimodal,Feature extraction / backbone,model_doc/clipseg
+clvp,CLVP,multimodal,Feature extraction / backbone,model_doc/clvp
+cwm,Code World Model (CWM),multimodal,Feature extraction / backbone; Text generation,model_doc/cwm
+cohere2_vision,Cohere2Vision,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/cohere2_vision
+cohere_compass,CohereCompass,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/cohere_compass
+colmodernvbert,ColModernVBert,multimodal,,model_doc/colmodernvbert
+colpali,ColPali,multimodal,,model_doc/colpali
+colqwen2,ColQwen2,multimodal,,model_doc/colqwen2
+cosmos3_edge,Cosmos3 Edge,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/cosmos3_edge
+cosmos3_omni,Cosmos3 Omni,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/cosmos3_omni
+data2vec,Data2Vec,multimodal,,model_doc/data2vec
+deepseek_vl,DeepseekVL,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/deepseek_vl
+deepseek_vl_hybrid,DeepseekVLHybrid,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/deepseek_vl_hybrid
+deplot,DePlot,multimodal,,model_doc/deplot
+diffusion_gemma,DiffusionGemma,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/diffusion_gemma
+donut,Donut,multimodal,,model_doc/donut
+dots3_note,Dots 3 Note Preview,multimodal,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),model_doc/dots3_note
+edgetam,EdgeTAM,multimodal,Feature extraction / backbone,model_doc/edgetam
+edgetam_video,EdgeTamVideo,multimodal,Feature extraction / backbone,model_doc/edgetam_video
+embedding_gemma2,EmbeddingGemma2,multimodal,Feature extraction / backbone,model_doc/embedding_gemma2
+emu3,Emu3,multimodal,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),model_doc/emu3
+ernie4_5_vl_moe,ernie4_5_vl_moe,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/ernie4_5_vl_moe
+evolla,Evolla,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/evolla
+fast_vlm,FastVLM,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/fast_vlm
+flava,FLAVA,multimodal,Feature extraction / backbone,model_doc/flava
+florence2,Florence2,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/florence2
+gemma4_assistant,Gemma 4 Assistant,multimodal,Text generation,model_doc/gemma4_assistant
+gemma4_unified_assistant,Gemma 4 Unified Assistant,multimodal,Text generation,model_doc/gemma4_unified_assistant
+gemma3,Gemma3,multimodal,Feature extraction / backbone; Text generation; Text classification; Image/video + text -> text (VLM chat),model_doc/gemma3
+gemma3n,Gemma3n,multimodal,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),model_doc/gemma3n
+gemma4,Gemma4,multimodal,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),model_doc/gemma4
+gemma4_unified,Gemma4 Unified,multimodal,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),model_doc/gemma4_unified
+git,GIT,multimodal,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),model_doc/git
+glm5_next,GLM-5.3-Flash,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/glm5_next
+glm46v,Glm46V,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/glm46v
+glm4v,glm4v,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/glm4v
+glm4v_moe,glm4v_moe,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/glm4v_moe
+glmga,Glmga,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/glmga
+glm_ocr,GlmOcr,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/glm_ocr
+got_ocr2,GOT-OCR2,multimodal,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),model_doc/got_ocr2
+granite4_vision,Granite4Vision,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/granite4_vision
+granite_docling,GraniteDocling,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/granite_docling
+granitevision,GraniteVision,multimodal,,model_doc/granitevision
+grounding-dino,Grounding DINO,multimodal,Feature extraction / backbone; Zero-shot object detection,model_doc/grounding-dino
+groupvit,GroupViT,multimodal,Feature extraction / backbone,model_doc/groupvit
+hyperclovax_vision_v2,HyperCLOVAX Vision V2,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/hyperclovax_vision_v2
+idefics,IDEFICS,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/idefics
+idefics2,Idefics2,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/idefics2
+idefics3,Idefics3,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/idefics3
+inkling,Inkling,multimodal,,model_doc/inkling
+inkling2,Inkling2,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/inkling2
+instructblip,InstructBLIP,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/instructblip
+instructblipvideo,InstructBlipVideo,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/instructblipvideo
+internvl,InternVL,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/internvl
+janus,Janus,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/janus
+kimi_k25,KimiK-2.5,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/kimi_k25
+kosmos-2,KOSMOS-2,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/kosmos-2
+kosmos2_5,KOSMOS-2.5,multimodal,,model_doc/kosmos2_5
+layoutlm,LayoutLM,multimodal,Feature extraction / backbone; Masked language modeling; Text classification; Token classification / NER,model_doc/layoutlm
+layoutlmv2,LayoutLMV2,multimodal,Feature extraction / backbone; Text classification; Token classification / NER; Extractive question answering,model_doc/layoutlmv2
+layoutlmv3,LayoutLMV3,multimodal,Feature extraction / backbone; Text classification; Token classification / NER; Extractive question answering,model_doc/layoutlmv3
+layoutxlm,LayoutXLM,multimodal,,model_doc/layoutxlm
+lfm2_vl,LFM2-VL,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/lfm2_vl
+lfm3_vl,LFM3-VL,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/lfm3_vl
+lighton_ocr,LightOnOcr,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/lighton_ocr
+lilt,LiLT,multimodal,Feature extraction / backbone; Text classification; Token classification / NER; Extractive question answering,model_doc/lilt
+llama4,Llama4,multimodal,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),model_doc/llama4
+llava,LLaVA,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/llava
+llava_next,LLaVA-NeXT,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/llava_next
+llava_next_video,LLaVa-NeXT-Video,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/llava_next_video
+llava_onevision,LLaVA-Onevision,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/llava_onevision
+lxmert,LXMERT,multimodal,Feature extraction / backbone; Extractive question answering,model_doc/lxmert
+matcha,MatCha,multimodal,,model_doc/matcha
+metaclip_2,MetaCLIP 2,multimodal,Feature extraction / backbone; Image classification,model_doc/metaclip_2
+mgp-str,MGP-STR,multimodal,Feature extraction / backbone,model_doc/mgp-str
+minicpm_ocr,MiniCPM-OCR,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/minicpm_ocr
+minicpmv4_6,MiniCPM-V,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/minicpmv4_6
+minicpmv4_7,MiniCPM-V 4.7,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/minicpmv4_7
+mistral_large4,Mistral Large 4,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/mistral_large4
+mistral3,Mistral3,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/mistral3
+mistral4,Mistral4,multimodal,Feature extraction / backbone; Text classification; Token classification / NER; Image/video + text -> text (VLM chat),model_doc/mistral4
+mllama,mllama,multimodal,Feature extraction / backbone; Text generation; Image/video + text -> text (VLM chat),model_doc/mllama
+mm-grounding-dino,MM Grounding DINO,multimodal,Feature extraction / backbone; Zero-shot object detection,model_doc/mm-grounding-dino
+molmo2,Molmo2,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/molmo2
+musicflamingo,MusicFlamingo,multimodal,"Feature extraction / backbone; Seq2seq generation (translation, summarization)",model_doc/musicflamingo
+neomme,NeoMME,multimodal,Feature extraction / backbone; Masked language modeling,model_doc/neomme
+nougat,Nougat,multimodal,,model_doc/nougat
+omdet-turbo,OmDet-Turbo,multimodal,Feature extraction / backbone; Zero-shot object detection,model_doc/omdet-turbo
+oneformer,OneFormer,multimodal,Feature extraction / backbone; Segmentation (panoptic/instance/semantic),model_doc/oneformer
+ovis2,Ovis2,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/ovis2
+owlvit,OWL-ViT,multimodal,Feature extraction / backbone; Zero-shot object detection,model_doc/owlvit
+owlv2,OWLv2,multimodal,Feature extraction / backbone; Zero-shot object detection,model_doc/owlv2
+paddleocr_vl,PaddleOCRVL,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/paddleocr_vl
+paligemma,PaliGemma,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/paligemma
+pe_audio_video,PE Audio Video,multimodal,Feature extraction / backbone,model_doc/pe_audio_video
+perceiver,Perceiver,multimodal,Feature extraction / backbone; Masked language modeling; Text classification,model_doc/perceiver
+perception_lm,PerceptionLM,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/perception_lm
+phi4_multimodal,Phi4 Multimodal,multimodal,Feature extraction / backbone; Text generation; Any-to-any / omni,model_doc/phi4_multimodal
+pi0,PI0,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/pi0
+pix2struct,Pix2Struct,multimodal,Image/video + text -> text (VLM chat),model_doc/pix2struct
+pixtral,Pixtral,multimodal,Feature extraction / backbone,model_doc/pixtral
+pp_doclayout_v2,PP-DocLayoutV2,multimodal,Object detection,model_doc/pp_doclayout_v2
+pp_doclayout_v3,PP-DocLayoutV3,multimodal,Feature extraction / backbone; Object detection,model_doc/pp_doclayout_v3
+pp_doclayout_v4,PP-DocLayoutV4,multimodal,Feature extraction / backbone; Object detection,model_doc/pp_doclayout_v4
+pp_formulanet,PP-FormulaNet,multimodal,Image/video + text -> text (VLM chat),model_doc/pp_formulanet
+pp_ocrv5_mobile_det,PP-OCRv5_mobile_det,multimodal,Object detection,model_doc/pp_ocrv5_mobile_det
+pp_ocrv5_mobile_rec,PP-OCRv5_mobile_rec,multimodal,Feature extraction / backbone,model_doc/pp_ocrv5_mobile_rec
+pp_ocrv5_server_det,PP-OCRv5_server_det,multimodal,Object detection,model_doc/pp_ocrv5_server_det
+pp_ocrv5_server_rec,PP-OCRv5_server_rec,multimodal,Feature extraction / backbone,model_doc/pp_ocrv5_server_rec
+pp_ocrv6_medium_det,PP-OCRv6_medium_det,multimodal,Feature extraction / backbone; Object detection,model_doc/pp_ocrv6_medium_det
+pp_ocrv6_small_det,PP-OCRv6_small_det,multimodal,Feature extraction / backbone; Object detection,model_doc/pp_ocrv6_small_det
+pp_ocrv6_small_rec,PP-OCRv6_small_rec,multimodal,Feature extraction / backbone,model_doc/pp_ocrv6_small_rec
+pp_ocrv6_tiny_rec,PP-OCRv6_tiny_rec,multimodal,Feature extraction / backbone,model_doc/pp_ocrv6_tiny_rec
+pp_chart2table,PPChart2Table,multimodal,Image/video + text -> text (VLM chat),model_doc/pp_chart2table
+pp_lcnet,PPLCNet,multimodal,Image classification,model_doc/pp_lcnet
+pp_lcnet_v3,PPLCNetV3,multimodal,,model_doc/pp_lcnet_v3
+pp_lcnet_v4,PPLCNetV4,multimodal,,model_doc/pp_lcnet_v4
+qianfan_ocr,QianfanOCR,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/qianfan_ocr
+qwen2_5_omni,Qwen2.5-Omni,multimodal,Any-to-any / omni; Text-to-speech / audio,model_doc/qwen2_5_omni
+qwen2_5_vl,Qwen2.5-VL,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/qwen2_5_vl
+qwen2_audio,Qwen2Audio,multimodal,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Any-to-any / omni",model_doc/qwen2_audio
+qwen2_vl,Qwen2VL,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/qwen2_vl
+qwen3_omni_moe,Qwen3-Omni-MoE,multimodal,Any-to-any / omni; Text-to-speech / audio,model_doc/qwen3_omni_moe
+qwen3_vl,Qwen3VL,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/qwen3_vl
+qwen3_vl_moe,Qwen3VLMoe,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/qwen3_vl_moe
+sam3,SAM3,multimodal,Feature extraction / backbone,model_doc/sam3
+sam3_video,SAM3 Video,multimodal,Feature extraction / backbone,model_doc/sam3_video
+sam3_lite_text,SAM3-LiteText,multimodal,Feature extraction / backbone,model_doc/sam3_lite_text
+shieldgemma2,ShieldGemma2,multimodal,Image/video + text -> text (VLM chat); Image classification,model_doc/shieldgemma2
+siglip,SigLIP,multimodal,Feature extraction / backbone; Image classification,model_doc/siglip
+siglip2,SigLIP2,multimodal,Feature extraction / backbone; Image classification,model_doc/siglip2
+slanet,SLANet,multimodal,,model_doc/slanet
+slanext,SLANeXt,multimodal,,model_doc/slanext
+smolvlm,SmolVLM,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/smolvlm
+speech-encoder-decoder,Speech Encoder Decoder Models,multimodal,"Speech recognition (seq2seq, Whisper-style)",model_doc/speech-encoder-decoder
+tapas,TAPAS,multimodal,Feature extraction / backbone; Masked language modeling; Text classification,model_doc/tapas
+tipsv2,TIPSv2,multimodal,Feature extraction / backbone,model_doc/tipsv2
+tipsv2_dpt,TIPSv2 DPT,multimodal,Depth estimation,model_doc/tipsv2_dpt
+trocr,TrOCR,multimodal,Text generation,model_doc/trocr
+tvp,TVP,multimodal,Feature extraction / backbone,model_doc/tvp
+udop,UDOP,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/udop
+unlimited_ocr,UnlimitedOcr,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/unlimited_ocr
+video_llama_3,VideoLlama3,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/video_llama_3
+video_llava,VideoLlava,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/video_llava
+vilt,ViLT,multimodal,Feature extraction / backbone,model_doc/vilt
+vipllava,VipLlava,multimodal,Feature extraction / backbone; Image/video + text -> text (VLM chat),model_doc/vipllava
+vision-encoder-decoder,Vision Encoder Decoder Models,multimodal,Image/video + text -> text (VLM chat),model_doc/vision-encoder-decoder
+vision-text-dual-encoder,Vision Text Dual Encoder,multimodal,Feature extraction / backbone,model_doc/vision-text-dual-encoder
+visual_bert,VisualBERT,multimodal,Feature extraction / backbone,model_doc/visual_bert
+voxtral,Voxtral,multimodal,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Any-to-any / omni; Speech recognition (seq2seq, Whisper-style)",model_doc/voxtral
+voxtral_realtime,VoxtralRealtime,multimodal,"Feature extraction / backbone; Seq2seq generation (translation, summarization); Any-to-any / omni; Speech recognition (seq2seq, Whisper-style)",model_doc/voxtral_realtime
+xclip,X-CLIP,multimodal,Feature extraction / backbone,model_doc/xclip
+decision_transformer,Decision Transformer,reinforcement-learning,Feature extraction / backbone,model_doc/decision_transformer

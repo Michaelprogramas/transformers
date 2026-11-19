@@ -29,4 +29,6 @@
     title: Fine-tuning para tarefas específicas
   - local: multilingual
     title: Modelos multilinguísticos para inferência
+  - local: free_models
+    title: Modelos grátis disponíveis
   title: Guias práticos
